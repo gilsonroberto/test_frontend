@@ -13,8 +13,25 @@ import {
   addCustomer,
   updateCustomer,
 } from '../../../store/actions/customers';
-import CustomizedSnackbars from '../../../components/Alerts';
-import handleClick from '../../../components/Alerts';
+import Snackbar from '@material-ui/core/Snackbar';
+import Alert from '@material-ui/lab/Alert';
+
+let open = false;
+
+function alert(){
+  open = true;
+  setInterval(() => {
+    window.location.href = "/";
+  }, 3000)   
+}
+
+const handleClose = (event, reason) => {
+  if (reason === 'clickaway') {
+    return;
+  }
+   window.location.href = "/";
+   open = false;  
+};
 
 class CustomersForm extends Component { 
   state = {
@@ -108,7 +125,9 @@ class CustomersForm extends Component {
         editing: true,
         loading: false,
       });
+      alert()
     } else { 
+      alert()
       propsUpdateCustomer(customer);
     }
   }  
@@ -152,15 +171,21 @@ class CustomersForm extends Component {
             <footer className="buttons">
               <button                
                 type="submit"
-                className="btn btn--theme"
-                
+                className="btn btn--theme"  
+                              
               >
                 {editing ? 'Salvar' : 'Criar'}
               </button>
               <Link to="/" className="btn btn--white">
                 Voltar
               </Link>
-              <CustomizedSnackbars />
+              <div>
+              <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
+                <Alert variant="filled" onClose={handleClose} severity="success">
+                    Usuário incluso com sucesso!
+                </Alert>
+              </Snackbar>
+              </div>
             </footer>
           </form>
         ) : (
