@@ -1,4 +1,4 @@
-# UOLHOST Test
+# PagSeguro Test
 
 O teste consistem em uma aplicação onde o usuário pode cadastrar e alterar uma lista de contatos.
 
