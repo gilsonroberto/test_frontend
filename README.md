@@ -2,7 +2,7 @@
 
 O teste consiste em uma aplicação onde o usuário pode cadastrar e alterar uma lista de contatos.
 
-Para o desenvolvimento com consumo de api, foram utilizados **Node** v10.19.0 com **React** 16.14.0
+Para o desenvolvimento com consumo de api, foram utilizados **Node** v10.19.0 com **React** 16.14.0 **Npm** 6.14.8
 
 
 # Começando
