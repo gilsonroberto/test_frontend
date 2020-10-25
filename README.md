@@ -1,8 +1,8 @@
 # PagSeguro Test
 
-O teste consistem em uma aplicação onde o usuário pode cadastrar e alterar uma lista de contatos.
+O teste consiste em uma aplicação onde o usuário pode cadastrar e alterar uma lista de contatos.
 
-Para o desenvolvimento com consumo de api, forma utilizados **Node** v10.19.0 com **React** 16.14.0
+Para o desenvolvimento com consumo de api, foram utilizados **Node** v10.19.0 com **React** 16.14.0
 
 
 # Começando
@@ -25,9 +25,9 @@ Para o desenvolvimento com consumo de api, forma utilizados **Node** v10.19.0 co
 
 ### Clonando o repositório
 
-$ git clone 
+$ git clone https://github.com/gilsonroberto/test_frontend.git
 
-$ cd novo-timesheet-confluence-frontend-2020
+$ cd test_frontend
 
 ### Instalando dependências
 
