@@ -49,10 +49,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/brunomacedo/uolhost.git"
+    "url": "git+https://github.com/gilsonroberto/test_frontend.git"
   },
   "bugs": {
-    "url": "https://github.com/brunomacedo/uolhost/issues"
+    "url": "https://github.com/gilsonroberto/test_frontend/issues"
   },
-  "homepage": "https://github.com/brunomacedo/uolhost#readme"
+  "homepage": "https://github.com/gilsonroberto/test_frontend#readme"
 }
